@@ -1,0 +1,18 @@
+
+
+#
+# PRODUCTION
+#
+
+python-dotenv
+
+requests
+pandas
+plotly
+
+#
+# DEVELOPMENT AND TEST
+#
+
+pytest
+#autopep8
