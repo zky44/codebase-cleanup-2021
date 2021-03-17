@@ -2,15 +2,18 @@
 # ignore clutter files on Mac:
 .DS_Store
 
-# ignore secret credentials:
-.env
-
-# ignore products database (but keep other example CSV files):
-data/products.csv
-
-# ignore receipt exports:
-receipts/*.txt
-
 # ignore results of running tests:
 __pycache__
 .pytest_cache
+
+# ignore secret credentials:
+.env
+
+# ignore products database for shopping (but keep other example CSV files):
+data/products.csv
+
+# ignore CSV exports from robo:
+data/*_prices.csv
+
+# ignore receipt exports from shopping:
+receipts/*.txt
