@@ -1,9 +1,14 @@
 
-
+# ignore clutter files on Mac:
 .DS_Store
 
+# ignore secret credentials:
 .env
 
-charts/*.csv
+# ignore exports:
 data/*.csv
 receipts/*.txt
+
+# ignore results of running tests:
+__pycache__
+.pytest_cache
