@@ -1,8 +1,4 @@
 
-#
-# SETUP SECTION (LEAVE AS-IS)
-#
-
 from datetime import datetime
 import os
 
@@ -17,10 +13,6 @@ selected_products = [
 ] # FYI: for the purposes of this exercise, you won't need to modify this list at all
 
 subtotal = sum([p["price"] for p in selected_products])
-
-#
-# IMPLEMENTATION SECTION (WE'LL NEED TO UPDATE)
-#
 
 # PRINT RECEIPT
 
