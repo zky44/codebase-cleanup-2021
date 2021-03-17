@@ -1,18 +1,30 @@
-
-from datetime import datetime
 import os
+from datetime import datetime
+from pandas import read_csv
+
+# READ INVENTORY OF PRODUCTS
+
+products_filepath = os.path.join(os.path.dirname(__file__), "..", "data", "products.csv")
+products_df = read_csv(products_filepath)
+products = products_df.to_dict("records")
+
+# CAPTURE PRODUCT SELECTIONS
+
+selected_products = []
+while True:
+    selected_id = input("Please select a product identifier: ")
+    if selected_id.upper() == "DONE":
+        break
+    else:
+        matching_products = [p for p in products if str(p["id"]) == str(selected_id)]
+        if any(matching_products):
+            selected_products.append(matching_products[0])
+        else:
+            print("OOPS, Couldn't find that product. Please try again.")
 
 checkout_at = datetime.now()
 
-selected_products = [
-    {"id":1, "name": "Chocolate Sandwich Cookies", "price": 3.50},
-    {"id":2, "name": "All-Seasons Salt", "price": 4.99},
-    {"id":3, "name": "Robust Golden Unsweetened Oolong Tea", "price": 2.49},
-    {"id":2, "name": "All-Seasons Salt", "price": 4.99},
-    {"id":1, "name": "Chocolate Sandwich Cookies", "price": 3.50},
-] # FYI: for the purposes of this exercise, you won't need to modify this list at all
-
-subtotal = sum([p["price"] for p in selected_products])
+subtotal = sum([float(p["price"]) for p in selected_products])
 
 # PRINT RECEIPT
 

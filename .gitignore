@@ -5,8 +5,10 @@
 # ignore secret credentials:
 .env
 
-# ignore exports:
-data/*.csv
+# ignore products database (but keep other example CSV files):
+data/products.csv
+
+# ignore receipt exports:
 receipts/*.txt
 
 # ignore results of running tests:

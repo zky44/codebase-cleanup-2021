@@ -6,9 +6,17 @@ The instructions are here.
 
 ## Setup
 
+Create and activate a new virtual environment:
+
 ```sh
 conda create -n cleanup-env python=3.8
 conda activate cleanup-env
+```
+
+Copy the default products inventory (then optionally customize the resulting "products.csv" file with your own products as desired):
+
+```sh
+cp data/default_products.csv data/products.csv
 ```
 
 ## Installation
@@ -19,16 +27,16 @@ pip install -r requirements.txt
 
 ## Usage
 
-Running the abbreviated game:
-
-```sh
-python -m app.game
-```
-
 Running the abbreviated shopping cart:
 
 ```sh
 python -m app.shopping
+```
+
+Running the abbreviated game:
+
+```sh
+python -m app.game
 ```
 
 Running the abbreviated robo advisor:
