@@ -19,22 +19,22 @@ pip install -r requirements.txt
 
 ## Usage
 
-Running the abbreviated shopping cart:
-
-```sh
-python -m app.shopping
-```
-
 Running the abbreviated game:
 
 ```sh
 python -m app.game
 ```
 
-Running the abbreviated robo advisor:
+Running the abbreviated shopping cart:
 
 ```sh
 python -m app.shopping
+```
+
+Running the abbreviated robo advisor:
+
+```sh
+python -m app.robo
 ```
 
 ## Testing
