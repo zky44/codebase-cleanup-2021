@@ -13,22 +13,22 @@
 #import pytest
 #
 #@pytest.fixture(scope="module")
-#def googl_response():
-#    return "TODO: FETCH SOME DATA OR SOMETHING"
+#def parsed_googl_response():
+#    return "TODO: FETCH AND PARSE SOME REAL LIVE DATA"
 
 #
 # MOCK DATA
 #
 
-parsed_error_response = {
+mock_error_response = {
     "Error Message": "Invalid API call. Please retry or visit the documentation (https://www.alphavantage.co/documentation/) for TIME_SERIES_DAILY."
 }
 
-parsed_rate_limit_response = {
+mock_rate_limit_response = {
     "Note": "Thank you for using Alpha Vantage! Our standard API call frequency is 5 calls per minute and 500 calls per day. Please visit https://www.alphavantage.co/premium/ if you would like to target a higher API call frequency."
 }
 
-parsed_msft_response = {
+mock_msft_response = {
     "Meta Data": {
         "1. Information": "Daily Prices (open, high, low, close) and Volumes",
         "2. Symbol": "MSFT",
@@ -75,7 +75,7 @@ parsed_msft_response = {
     }
 }
 
-parsed_amzn_response = {
+mock_amzn_response = {
     "Meta Data": {
         "1. Information": "Daily Prices (open, high, low, close) and Volumes",
         "2. Symbol": "AMZN",
