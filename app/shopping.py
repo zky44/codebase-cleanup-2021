@@ -4,7 +4,15 @@ from pandas import read_csv
 
 
 def format_usd(my_price):
+    """
+    Formats a number as USD with dollar sign and two decimals (and also thousands separator)
+
+    Params my_price is a number (int or float) that we want to format
+
+    Examples: format_usd(10)
+    """
     return f"${my_price:,.2f}"
+
 
 
 # READ INVENTORY OF PRODUCTS
@@ -46,7 +54,6 @@ print(f"TOTAL: {format_usd(subtotal * 0.0875 + subtotal)}")
 print("---------")
 print("THANK YOU! PLEASE COME AGAIN SOON!")
 print("---------")
-
 
 
 
