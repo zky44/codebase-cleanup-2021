@@ -1,10 +1,11 @@
 
+
 import os
 import json
 from dotenv import load_dotenv
 import requests
 from pandas import DataFrame
-import plotly.express as px
+#import plotly.express as px
 
 load_dotenv()
 
