@@ -48,5 +48,5 @@ df.to_csv(csv_filepath)
 
 # CHART PRICES OVER TIME
 
-fig = px.line(df, y="close", title=f"Closing Prices for {symbol.upper()}") # see: https://plotly.com/python-api-reference/generated/plotly.express.line
-fig.show()
+#fig = px.line(df, y="close", title=f"Closing Prices for {symbol.upper()}") # see: https://plotly.com/python-api-reference/generated/plotly.express.line
+#fig.show()
