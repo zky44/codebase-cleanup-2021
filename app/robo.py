@@ -1,10 +1,11 @@
 
+
 import os
 import json
 from dotenv import load_dotenv
 import requests
 from pandas import DataFrame
-import plotly.express as px
+#import plotly.express as px
 
 load_dotenv()
 
@@ -47,5 +48,5 @@ df.to_csv(csv_filepath)
 
 # CHART PRICES OVER TIME
 
-fig = px.line(df, y="close", title=f"Closing Prices for {symbol.upper()}") # see: https://plotly.com/python-api-reference/generated/plotly.express.line
-fig.show()
+#fig = px.line(df, y="close", title=f"Closing Prices for {symbol.upper()}") # see: https://plotly.com/python-api-reference/generated/plotly.express.line
+#fig.show()
