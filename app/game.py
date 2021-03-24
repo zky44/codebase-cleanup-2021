@@ -67,4 +67,6 @@ elif u == "scissors":
     elif c == "scissors":
         print("________")
 
+
+
 # there are even less complex ways of doing this (for example using a single dictionary)
