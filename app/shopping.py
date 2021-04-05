@@ -51,12 +51,15 @@ if __name__ == "__main__":
         selected_id = input("Please select a product identifier: ")
         if selected_id.upper() == "DONE":
             break
-    else:
-        matching_product = lookup_product(selected_id, products)
-        if matching_product:
-            selected_products.append(matching_product)
         else:
-            print("OOPS, Couldn't find that product. Please try again.")
+            matching_products = lookup_product(selected_id, products)
+        if matching_products:
+            selected_products.append(matching_products)
+    else:
+        print("OOPS, Couldn't find that product. Please try again.")
+    
+
+
     
     checkout_at = datetime.now()
 

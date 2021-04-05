@@ -6,7 +6,7 @@ def determine_winner(choice1, choice2):
     """
 
     Params:
-        choice 1 and choice 2 are both string: one of "rock", "paper", or "scissors"
+        choice 1 and choice 2 are both strings: one of "rock", "paper", or "scissors"
 
     """
     winners = {
@@ -30,7 +30,7 @@ def determine_winner(choice1, choice2):
     winning_choice = winners[choice1][choice2]
     return winning_choice
 
-    if __name__ == "__main__":
+if __name__ == "__main__":
     #pass
 
     #
@@ -56,15 +56,12 @@ def determine_winner(choice1, choice2):
         # DETERMINATION OF WINNER
         #
 
-    winner = determine_winner(u, c)
+winner = determine_winner(u, c)
 
-    if winner == user_choice:
+if winner == u:
         print("YOU WON!")
-    elif winner == c:
+elif winner == c:
         print("COMPUTER WON!")
-    elif winner == None:
+elif winner == None:
         print("TIE!")
 
-
-
-    # there are even less complex ways of doing this (for example using a single dictionary)
