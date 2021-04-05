@@ -37,31 +37,31 @@ if __name__ == "__main__":
     # USER SELECTION
     #
 
-        valid_options = ["rock", "paper", "scissors"]
+    valid_options = ["rock", "paper", "scissors"]
 
-        u = input("Please choose one of 'Rock', 'Paper', or 'Scissors': ").lower()
-        print("USER CHOICE:", u)
-        if u not in valid_options:
-            print("OOPS, TRY AGAIN")
-            exit()
+    u = input("Please choose one of 'Rock', 'Paper', or 'Scissors': ").lower()
+    print("USER CHOICE:", u)
+    if u not in valid_options:
+        print("OOPS, TRY AGAIN")
+        exit()
 
         #
         # COMPUTER SELECTION
         #
 
-        c = choice(valid_options)
-        print("COMPUTER CHOICE:", c)
+    c = choice(valid_options)
+    print("COMPUTER CHOICE:", c)
 
         #
         # DETERMINATION OF WINNER
         #
 
-winner = determine_winner(u, c)
+    winner = determine_winner(u, c)
 
-if winner == u:
+    if winner == u:
         print("YOU WON!")
-elif winner == c:
+    elif winner == c:
         print("COMPUTER WON!")
-elif winner == None:
+    elif winner == None:
         print("TIE!")
 
